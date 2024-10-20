@@ -6,7 +6,7 @@
         static void Main()
         {
             Console.WriteLine("Digite a mensagem:");
-            string mensagemCodificada = Console.ReadLine();
+            string mensagemCodificada = Console.ReadLine();1
             string mensagemDecodificada = "";
 
             for (int i = 0; i < mensagemCodificada.Length; i++)
