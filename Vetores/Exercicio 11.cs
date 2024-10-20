@@ -1,12 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Vetores
-{
-    internal class Exercicio_11
+
+    public class Ex11
     {
+        static void Main()
+        {
+            Console.WriteLine("Digite a mensagem:");
+            string mensagemCodificada = Console.ReadLine();
+            string mensagemDecodificada = "";
+
+            for (int i = 0; i < mensagemCodificada.Length; i++)
+            {
+                if (mensagemCodificada[i] == 'p')
+                {
+                    if (i + 1 < mensagemCodificada.Length)
+                    {
+                        mensagemDecodificada += mensagemCodificada[i + 1];
+                    }
+                    i++;
+                }
+                else
+                {
+                    mensagemDecodificada += mensagemCodificada[i];
+                }
+            }
+            Console.WriteLine("Mensagem decodificada: " + mensagemDecodificada);
+        }
     }
-}
